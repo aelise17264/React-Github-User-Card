@@ -19,7 +19,7 @@ body{
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@ body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -45,7 +45,7 @@ body{
 
 
 .mycardMaker {
-  width: 60%;
+  width: 50%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -54,8 +54,9 @@ body{
   background-color: #FFF;
   margin-bottom: 30px;
   align-content: center;
-  margin-left: 15%;
+  margin-left: 20%;
   background-color: #f8bd7f;
+  padding-bottom: 30px;
 }
 
 img {
@@ -75,7 +76,6 @@ h1{
 h3 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-left: 10%;
   margin-bottom: 5%;
 }
 
