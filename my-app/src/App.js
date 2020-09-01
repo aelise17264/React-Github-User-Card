@@ -29,9 +29,9 @@ componentDidMount(){
     <div className='mycardMaker'>
       <h3 className="userName">{this.state.users.name}</h3>
       <img src={this.state.users.avatar_url} alt='profile pic'/>
+      <p>Username: {this.state.users.login}</p>
       <p>Bio: {this.state.users.bio}</p>
       <p>Location: {this.state.users.location}</p>
-      <p>Twitter Handle: {this.state.users.twitter_username}</p>
       <p>Followers: {this.state.users.followers}</p>
     </div>
       <Followers/>

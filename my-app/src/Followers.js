@@ -8,9 +8,10 @@ class Followers extends React.Component {
         newCard: [],
         error: ''
       };
+      // https://api.github.com//aelise17264/followers
 
       componentDidMount(){
-        axios.get('https://api.github.com//aelise17264/followers')
+        axios.get('https://api.github.com/users/aelise17264')
         .then(res => {
           console.log(res.data)
           this.setState({
@@ -23,24 +24,26 @@ class Followers extends React.Component {
        }
        
        
-         render(){
-             console.log('rendering', this.state.newCard)
-         return (
+          render(){
+    //          console.log('rendering', this.state.newCard)
+          return (
              
            <div className='followerCards'>
-             {/* {this.state.newCard.map((card) => (
+             {this.state.newCard.map((card) => (
+               <>
                 <h3 className="userName">{card.name}</h3>
-                  <img src={card.avatar_url}/>
+                  <img src={card.avatar_url} alt="follower avatar"/>
                  <p>Bio: {card.bio}</p>
                  <p>Location: {card.location}</p>
                  <p>Twitter Handle: {card.twitter_username}</p>
                  <p>Followers: {card.followers}</p> 
+                 </>
                  )
-                  )} */}
+                  )}
            </div>
            
-         );
-       }
+        )
+        }
 
 }
 export default Followers

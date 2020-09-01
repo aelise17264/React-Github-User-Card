@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+.mycardMaker {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: #FFF;
+  margin-bottom: 30px;
+  align-content: center;
+  margin-left: 15%;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-left: 41%;
+  margin-bottom: 2%;
+  border-radius: 12%;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
