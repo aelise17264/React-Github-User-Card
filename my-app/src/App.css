@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  color: #222831;
+}
+
+body{
+  background-color: #145374;
+
 }
 
 .App-logo {
@@ -49,6 +55,7 @@
   margin-bottom: 30px;
   align-content: center;
   margin-left: 15%;
+  background-color: #f8bd7f;
 }
 
 img {

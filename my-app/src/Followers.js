@@ -11,7 +11,7 @@ class Followers extends React.Component {
       // https://api.github.com//aelise17264/followers
 
       componentDidMount(){
-        axios.get('https://api.github.com/users/aelise17264')
+        axios.get('https://api.github.com/users/aelise17264/followers')
         .then(res => {
           console.log(res.data)
           this.setState({
@@ -25,18 +25,18 @@ class Followers extends React.Component {
        
        
           render(){
-    //          console.log('rendering', this.state.newCard)
+            console.log('rendering', this.state.newCard)
           return (
              
            <div className='followerCards'>
              {this.state.newCard.map((card) => (
                <>
-                <h3 className="userName">{card.name}</h3>
+               <div className='mycardMaker'>
+                <h3 className="userName"> {card.login}</h3>
                   <img src={card.avatar_url} alt="follower avatar"/>
-                 <p>Bio: {card.bio}</p>
-                 <p>Location: {card.location}</p>
-                 <p>Twitter Handle: {card.twitter_username}</p>
-                 <p>Followers: {card.followers}</p> 
+                 <p>Organizations: {card.organizations_url}</p>
+                 <p>User's URL: {card.followers_url}</p> 
+                 </div>
                  </>
                  )
                   )}
