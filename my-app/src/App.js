@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
-
+import Followers from './Followers'
 
 class App extends React.Component {
   state ={
     users: [],
-    newCard: '',
     error: ''
   };
   
@@ -28,15 +26,15 @@ componentDidMount(){
   return (
     <div className="App">
      <h1>Github User Cards</h1>
-    <div className='cardMaker'>
+    <div className='mycardMaker'>
       <h3 className="userName">{this.state.users.name}</h3>
-      <img src={this.state.users.avatar_url}/>
-  <p>Bio: {this.state.users.bio}</p>
-  <p>Location: {this.state.users.location}</p>
-  <p>Twitter Handle: {this.state.users.twitter_username}</p>
-  <p>Followers: {this.state.users.followers}</p>
+      <img src={this.state.users.avatar_url} alt='profile pic'/>
+      <p>Bio: {this.state.users.bio}</p>
+      <p>Location: {this.state.users.location}</p>
+      <p>Twitter Handle: {this.state.users.twitter_username}</p>
+      <p>Followers: {this.state.users.followers}</p>
     </div>
-
+      <Followers/>
     </div>
   );
 }
